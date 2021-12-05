@@ -2,9 +2,9 @@
   "name": "hotel",
   "version": "1.0.0",
   "description": "Hotel Reservation Project",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node hotelApi.js"
   },
   "author": "Vikrant Singh",
   "license": "ISC",
