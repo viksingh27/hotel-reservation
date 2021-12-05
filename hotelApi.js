@@ -7,7 +7,7 @@ dotEnv.config();
 const bodyParser = require('body-parser')
 const cors = require('cors');
 const mongoUrl = 'mongodb+srv://hotel:hotel@cluster1.cehbi.mongodb.net/hotel?retryWrites=true&w=majority'
-// var port = process.env.PORT || 8125;
+var port = process.env.PORT || 8125;
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 app.use(cors())
