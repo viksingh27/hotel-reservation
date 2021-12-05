@@ -1,1 +1,1 @@
-web:node src/hotelApi.js
+web: node src/hotelApi.js
