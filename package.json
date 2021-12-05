@@ -1,0 +1,22 @@
+{
+  "name": "hotel",
+  "version": "1.0.0",
+  "description": "Hotel Reservation Project",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "Vikrant Singh",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "mongodb": "^4.2.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15"
+  }
+}
