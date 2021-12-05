@@ -1,9 +1,9 @@
 const express = require('express');
 const app = express();
 const dotEnv = require('dotenv');
-dotEnv.config();
 const mongo = require('mongodb');
 const mongoClient = mongo.MongoClient;
+dotEnv.config();
 const bodyParser = require('body-parser')
 const cors = require('cors');
 const mongoUrl = 'mongodb+srv://hotel:hotel@cluster1.cehbi.mongodb.net/hotel?retryWrites=true&w=majority'
