@@ -32,7 +32,7 @@ app.get('/api/rooms', (req,res)=>{
 
 // get all rooms with caegory -1 
 
-app.get('/api/rooms/:id' , (req, res) =>{
+app.get('/api/rooms:id' , (req, res) =>{
     var id = parseInt(req.params.id);
     db.collection('rooms').find({"category_id" : id}).toArray((err, result)=>{
         if(err) throw err;
