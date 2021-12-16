@@ -40,6 +40,16 @@ app.get('/api/rooms:id' , (req, res) =>{
     })
 })
 
+// get all multipurpose halls on the basis of name
+
+app.get ('/api/halls:name', (req,res)=>{
+    const name = req.params.name;
+    db.collection('halls').find({"room_name" : name}).toArray((err,result)=>{
+        if(err) throw err;
+        res.send(result);
+    })
+})
+
 // get all services 
 
 app.get('/api/services',(req,res)=>{
