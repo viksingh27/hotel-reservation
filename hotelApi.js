@@ -185,6 +185,10 @@ app.get('/api/filter/:category_id', (req,res)=>{
     var param = Number(req.params.category_id)
     var query = {"category_id":param}
     var cap = Number(req.query.capacity)
+    if(req.query.name)
+    {
+        query = {"category_id":param , "room_name":(req.query.name)}
+    }
     if(req.query.wifi === "yes")
     {
         query = {"category_id":param , "amenities.wifi":(req.query.wifi)}
