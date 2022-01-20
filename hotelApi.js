@@ -207,16 +207,16 @@ app.get('/api/filter/:category_id', (req,res)=>{
     }
     else if(req.query.bed)
     {
-        query = {"category_id":param , "bed": "Single"}
+        query = {"category_id":param , "bed": (req.query.bed)}
     }
-    else if(req.query.kingBed === "king")
-    {
-        query = {"category_id":param ,"bed":"King size bed"}
-    }
-    else if((req.query.queenBed === "queen"))
-    {
-        query = {"category_id":param ,"bed":"Queen size bed"}
-    }
+//     else if(req.query.kingBed === "king")
+//     {
+//         query = {"category_id":param ,"bed":"King size bed"}
+//     }
+//     else if((req.query.queenBed === "queen"))
+//     {
+//         query = {"category_id":param ,"bed":"Queen size bed"}
+//     }
     else if((req.query.lcost) && (req.query.hcost))
     {
         var lcost = Number(req.query.lcost);
